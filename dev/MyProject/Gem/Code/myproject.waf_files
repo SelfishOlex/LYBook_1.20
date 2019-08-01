@@ -4,6 +4,8 @@
             "Include/MyProject/MyProjectBus.h"
         ],
         "Source": [
+            "Source/MySpawnerComponent.cpp",
+            "Source/MySpawnerComponent.h",
             "Source/OscillatorComponent.cpp",
             "Source/OscillatorComponent.h",
             "Source/MyComponent.cpp",
