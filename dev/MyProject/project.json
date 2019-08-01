@@ -1,0 +1,42 @@
+{
+    "project_name": "MyProject",
+    "product_name": "MyProject",
+    "executable_name": "MyProjectLauncher",
+    "modules" : [],
+    "project_id": "{F073E998-EF36-4AFF-9978-6DCE03C58DB0}",
+	
+    "durango_settings" : {
+        "app_id"            : "MyProject",
+        "entry_point"       : "MyProject.app",
+        "package_name"      : "MyProject",
+        "display_name"      : "MyProject",
+        "publisher"         : "Your Publisher",
+        "description"       : "Your game's description.",
+        "foreground_text"   : "light",
+        "background_color"  : "#6495ED",
+        "version"           : "1.0.0.0",
+        "titleid"           : "00E7F92C",
+        "scid"              : "65b20100-55fe-49dc-82b9-020000e7f92c",
+        "appxmanifest"      : "../Resources/AppxManifest.xml",
+        "logo"              : "../Resources/DurangoLogo.png",
+        "small_logo"        : "../Resources/DurangoSmallLogo.png",
+        "splash_screen"     : "../Resources/DurangoSplashScreen.png",
+        "store_logo"        : "../Resources/DurangoStoreLogo.png",
+        "wide_logo"         : "../Resources/DurangoWideLogo.png"
+    },
+
+    "android_settings" : {
+        "package_name" : "com.lumberyard.yourgame",
+        "version_number" : 1,
+        "version_name" : "1.0.0.0",
+        "orientation" : "landscape"
+    },
+
+    "orbis_settings": {
+        "data_folder": "MyProject",
+        "nptitle_dat": "",
+        "param_sfo": "../Resources/param.sfo",
+        "trophy_trp": "../Resources/trophies.trp"
+    }
+
+}

@@ -1,0 +1,9 @@
+{
+    "description": "Configuration for MyProject",
+    "visual_studio_name": "MyProject",
+    "comment" : "",
+    "game_projects" : "MyProject",
+
+    "modules" : [
+    ]
+}

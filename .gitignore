@@ -139,3 +139,8 @@
 /SetupAssistant.bat
 dev/CloudGemDefectReportSample/Gem/Resources/GameSDK.ico
 filehashes.json
+dev/Tools/LmbrSetup/win.vc141/
+dev/SessionStatus/editor_statuses.json
+dev/Editor/editorlayout.xml
+dev/Editor/editoreventlog.xml
+dev/UserSettings.xml
