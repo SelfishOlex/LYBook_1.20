@@ -4,6 +4,8 @@
             "Include/MyProject/MyProjectBus.h"
         ],
         "Source": [
+            "Source/MyComponent.cpp",
+            "Source/MyComponent.h",
             "Source/MyProjectModule.cpp",
             "Source/MyProjectSystemComponent.cpp",
             "Source/MyProjectSystemComponent.h"
