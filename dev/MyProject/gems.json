@@ -74,6 +74,24 @@
             "_comment": "Maestro"
         },
         {
+            "Path": "Gems/PhysX",
+            "Uuid": "4e08125824434932a0fe3717259caa47",
+            "Version": "0.1.0",
+            "_comment": "PhysX"
+        },
+        {
+            "Path": "Gems/PhysXCharacters",
+            "Uuid": "50f9ae1e09ac471bbd9d86ca8063ddf9",
+            "Version": "0.1.0",
+            "_comment": "PhysXCharacters"
+        },
+        {
+            "Path": "Gems/PhysXDebug",
+            "Uuid": "516145e2d9904b13813f1b54605e26a6",
+            "Version": "0.1.0",
+            "_comment": "PhysXDebug"
+        },
+        {
             "Path": "Gems/CameraFramework",
             "Uuid": "54f2763fe191432fa681ce4a354eedf5",
             "Version": "0.1.0",
@@ -181,6 +199,12 @@
             "_comment": "PhysicsEntities"
         },
         {
+            "Path": "Gems/ImGui",
+            "Uuid": "bab8807a1bc646b3909f3cc200ffeedf",
+            "Version": "0.1.0",
+            "_comment": "ImGui"
+        },
+        {
             "Path": "Gems/ChatPlay",
             "Uuid": "bfbc60c63ffd4b00927003735b26ce99",
             "Version": "0.1.0",
@@ -197,6 +221,12 @@
             "Uuid": "c7935ecf5e8047fe8ca947b34b11cadb",
             "Version": "0.1.0",
             "_comment": "LyShineExamples"
+        },
+        {
+            "Path": "Gems/Multiplayer",
+            "Uuid": "d3ed407a19bb4c0d92b7c4872313d600",
+            "Version": "1.0.0",
+            "_comment": "Multiplayer"
         },
         {
             "Path": "Gems/PrimitiveAssets",
