@@ -4,6 +4,7 @@
 
 #include <MyProjectSystemComponent.h>
 #include <MyComponent.h>
+#include <OscillatorComponent.h>
 
 namespace MyProject
 {
@@ -21,6 +22,7 @@ namespace MyProject
             m_descriptors.insert(m_descriptors.end(), {
                 MyProjectSystemComponent::CreateDescriptor(),
                 MyComponent::CreateDescriptor(),
+                OscillatorComponent::CreateDescriptor(),
             });
         }
 
