@@ -56,7 +56,11 @@ void OscillatorComponent::Reflect(AZ::ReflectContext* reflection)
     auto sc = azrtti_cast<AZ::SerializeContext*>(reflection);
     if (!sc) return;
     sc->Class<OscillatorComponent, Component>()
-        ->Version(1);
+        // serialize m_period
+        ->Field("Period", &OscillatorComponent::m_period)
+        // serialize m_amplitude
+        ->Field("Amplitude", &OscillatorComponent::m_amplitude)
+        ->Version(2);
 
     AZ::EditContext* ec = sc->GetEditContext();
     if (!ec) return;
@@ -66,7 +70,13 @@ void OscillatorComponent::Reflect(AZ::ReflectContext* reflection)
             "[oscillates the entity]")
       ->ClassElement(AZ::Edit::ClassElements::EditorData, "")
         ->Attribute(AppearsInAddComponentMenu, AZ_CRC("Game"))
-        ->Attribute(Category, "My Project");
+        ->Attribute(Category, "My Project")
+        // expose the setting to the editor
+        ->DataElement(nullptr, &OscillatorComponent::m_period,
+            "Period", "[the period of oscillation]")
+        // expose the setting to the editor
+        ->DataElement(nullptr, &OscillatorComponent::m_amplitude,
+            "Amplitude", "[the height of oscillation]");
 }
 
 void OscillatorComponent::GetRequiredServices(
@@ -74,4 +84,4 @@ void OscillatorComponent::GetRequiredServices(
 {
     // OscillatorComponent requires TransformComponent
     req.push_back(AZ_CRC("TransformService"));
-} 
+}
