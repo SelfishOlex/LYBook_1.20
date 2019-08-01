@@ -1,0 +1,12 @@
+{
+    "auto": {
+        "Include": [
+            "Include/MyGem/MyGemBus.h"
+        ],
+        "Source": [
+            "Source/MyGemModule.cpp",
+            "Source/MyGemSystemComponent.cpp",
+            "Source/MyGemSystemComponent.h"
+        ]
+    }
+}
