@@ -1,0 +1,6 @@
+def build(bld):
+    bld.DefineGem(
+        # Add custom build options here
+        disable_pch             = True,
+        includes    = [bld.Path('Code/CryEngine/CryAction')],
+    )

@@ -98,6 +98,12 @@
             "_comment": "Gestures"
         },
         {
+            "Path": "Gems/WindowPosition",
+            "Uuid": "625cd93f587f4eb58b4d0c06f486e87c",
+            "Version": "0.1.0",
+            "_comment": "WindowPosition"
+        },
+        {
             "Path": "Gems/CertificateManager",
             "Uuid": "659cffff33b14a10835bafc6ea623f98",
             "Version": "0.0.1",
