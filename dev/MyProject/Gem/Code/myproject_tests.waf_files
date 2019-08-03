@@ -1,7 +1,8 @@
 {
     "auto": {
         "Tests": [
-            "Tests/MyProjectTest.cpp"
+            "Tests/MyProjectTest.cpp",
+            "Tests/OscillatorMockTest.cpp"
         ]
     }
 }
