@@ -157,6 +157,12 @@
             "_comment": "SceneProcessing"
         },
         {
+            "Path": "Gems/MultiplayerCharacter",
+            "Uuid": "7f99bc097f314da8998166ec4a09457d",
+            "Version": "0.1.0",
+            "_comment": "MultiplayerCharacter"
+        },
+        {
             "Path": "Gems/StartingPointCamera",
             "Uuid": "834070b9537d44df83559e2045c3859f",
             "Version": "0.1.0",
