@@ -145,3 +145,5 @@ dev/Editor/editorlayout.xml
 dev/Editor/editoreventlog.xml
 dev/UserSettings.xml
 dev/MyProject/Levels/Simple/_savebackup/
+dev/Bin64vc141.Release/
+dev/myproject_pc_paks/
