@@ -6,6 +6,7 @@
 #include <MyComponent.h>
 #include <OscillatorComponent.h>
 #include <MySpawnerComponent.h>
+#include <StartingMapSystemComponent.h>
 
 namespace MyProject
 {
@@ -25,6 +26,7 @@ namespace MyProject
                 MyComponent::CreateDescriptor(),
                 OscillatorComponent::CreateDescriptor(),
                 MySpawnerComponent::CreateDescriptor(),
+                StartingMapSystemComponent::CreateDescriptor(),
             });
         }
 
@@ -35,6 +37,7 @@ namespace MyProject
         {
             return AZ::ComponentTypeList{
                 azrtti_typeid<MyProjectSystemComponent>(),
+                azrtti_typeid<StartingMapSystemComponent>(),
             };
         }
     };

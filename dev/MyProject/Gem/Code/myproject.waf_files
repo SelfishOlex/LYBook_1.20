@@ -4,6 +4,8 @@
             "Include/MyProject/MyProjectBus.h"
         ],
         "Source": [
+            "Source/StartingMapSystemComponent.cpp",
+            "Source/StartingMapSystemComponent.h",
             "Source/MySpawnerComponent.cpp",
             "Source/MySpawnerComponent.h",
             "Source/OscillatorComponent.cpp",

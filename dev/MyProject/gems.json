@@ -110,12 +110,6 @@
             "_comment": "TextureAtlas"
         },
         {
-            "Path": "Gems/Gestures",
-            "Uuid": "6056556b6088413984309c4a413593ad",
-            "Version": "1.0.0",
-            "_comment": "Gestures"
-        },
-        {
             "Path": "Gems/WindowPosition",
             "Uuid": "625cd93f587f4eb58b4d0c06f486e87c",
             "Version": "0.1.0",
