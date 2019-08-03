@@ -29,6 +29,7 @@ namespace MultiplayerCharacter
         void StrafeLeft(ActionState state) override;
         void StrafeRight(ActionState state) override;
         void Turn(float amount) override;
+        void Shoot(ActionState state) override;
 
         // TickBus interface
         void OnTick(float dt, AZ::ScriptTimePoint) override;

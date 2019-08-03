@@ -30,6 +30,7 @@ namespace MultiplayerCharacter
         virtual void StrafeRight(ActionState state) {}
         virtual void Turn(float amount) {}
         virtual void LookUpOrDown(float amount) {}
+        virtual void Shoot(ActionState state) {}
     };
 
     using PlayerControlsRequestBus =

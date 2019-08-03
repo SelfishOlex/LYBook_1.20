@@ -90,6 +90,13 @@ bool InputCaptureComponent::OnKeyboardEvent(
         return true; // key consumed
     }
 
+    if (inputType == InputDeviceKeyboard::Key::EditSpace)
+    {
+        const bool pressed = !!inputChannel.GetValue();
+        CheckAndUpdateShoot(pressed);
+        return true; // key consumed
+    }
+
     return false; // key not consumed
 }
 
@@ -135,6 +142,17 @@ void InputCaptureComponent::CheckAndUpdateStrafeRight(bool press)
         press ? ActionState::Started : ActionState::Stopped);
 
     m_isStrafingRightPressed = press;
+}
+
+void InputCaptureComponent::CheckAndUpdateShoot(bool press)
+{
+    if (m_isShooting == press) return;
+
+    PlayerControlsRequestBus::Broadcast(
+        &PlayerControlsRequestBus::Events::Shoot,
+        press ? ActionState::Started : ActionState::Stopped);
+
+    m_isShooting = press;
 }
 
 bool InputCaptureComponent::OnMouseEvent(

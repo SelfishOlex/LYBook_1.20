@@ -6,6 +6,8 @@
 #include <InputCaptureComponent.h>
 #include <CameraControlsComponent.h>
 #include <PlayerControlsComponent.h>
+#include <TimedProjectileComponent.h>
+#include <PebbleSpawnerComponent.h>
 
 namespace MultiplayerCharacter
 {
@@ -25,6 +27,8 @@ namespace MultiplayerCharacter
                 InputCaptureComponent::CreateDescriptor(),
                 CameraControlsComponent::CreateDescriptor(),
                 PlayerControlsComponent::CreateDescriptor(),
+                TimedProjectileComponent::CreateDescriptor(),
+                PebbleSpawnerComponent::CreateDescriptor(),
             });
         }
 
