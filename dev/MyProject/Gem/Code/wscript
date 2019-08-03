@@ -3,7 +3,7 @@ def build(bld):
     bld.DefineGem(
         # General
         includes                = ['.'],
-        use                     = ['AzGameFramework'],
+        use                     = ['AzGameFramework','MultiplayerCharacter'],
         disable_pch             = True,
 
         # Platform Specific

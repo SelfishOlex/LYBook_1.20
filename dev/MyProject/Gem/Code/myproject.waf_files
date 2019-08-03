@@ -4,6 +4,8 @@
             "Include/MyProject/MyProjectBus.h"
         ],
         "Source": [
+            "Source/MyUIStatusComponents.cpp",
+            "Source/MyUIStatusComponents.h",
             "Source/TransformSyncComponent.cpp",
             "Source/TransformSyncComponent.h",
             "Source/StartingMapSystemComponent.cpp",
