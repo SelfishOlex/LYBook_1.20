@@ -1,10 +1,30 @@
-
 def build(bld):
+    import os
+    driver_node = bld.path.find_or_declare(
+        'Gems/ScriptCanvas/Code/Include/ScriptCanvas/')
+    gem_node = bld.path.find_or_declare('MyProject/Gem/Code')
+    script_canvas_dir = driver_node.path_from(gem_node)
+
+    AZ_CODEGEN_ARGS = az_code_gen = [{
+                'files'   : [
+                    'Source/ScriptCanvas/MyScriptCanvasNode.h',
+                ],
+                'scripts' : [
+                    os.path.join(script_canvas_dir,
+                        'CodeGen/Drivers/ScriptCanvasNode.py')
+                ]
+            }]
+
     bld.DefineGem(
         # General
         includes                = ['.'],
-        use                     = ['AzGameFramework','MultiplayerCharacter'],
+        use                     = ['AzGameFramework',
+                                   'MultiplayerCharacter',
+                                   'ScriptCanvas'],
         disable_pch             = True,
+        features                = ['az_code_gen'],
+        az_code_gen             = AZ_CODEGEN_ARGS,
+
 
         # Platform Specific
 

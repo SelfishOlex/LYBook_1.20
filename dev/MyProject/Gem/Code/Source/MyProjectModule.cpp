@@ -11,6 +11,7 @@
 #include <MyUIStatusComponents.h>
 #include <MyScriptHelperComponent.h>
 #include <MyScriptSystemComponent.h>
+#include <ScriptCanvas/MyNodeLibrary.h>
 
 namespace MyProject
 {
@@ -41,6 +42,11 @@ namespace MyProject
                 MyScriptHelperComponent::CreateDescriptor(),
                 MyScriptSystemComponent::CreateDescriptor(),
             });
+
+            const auto desc =
+                MyNodeLibrary::GetComponentDescriptors();
+            m_descriptors.insert(m_descriptors.end(),
+                desc.begin(), desc.end());
         }
 
         /**
@@ -50,6 +56,7 @@ namespace MyProject
         {
             return AZ::ComponentTypeList{
                 azrtti_typeid<MyProjectSystemComponent>(),
+                azrtti_typeid<MyScriptSystemComponent>(),
                 azrtti_typeid<StartingMapSystemComponent>(),
             };
         }

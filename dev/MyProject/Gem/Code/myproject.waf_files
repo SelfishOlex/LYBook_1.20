@@ -24,6 +24,12 @@
             "Source/MyProjectModule.cpp",
             "Source/MyProjectSystemComponent.cpp",
             "Source/MyProjectSystemComponent.h"
+        ],
+        "Source/ScriptCanvas": [
+            "Source/ScriptCanvas/MyNodeLibrary.cpp",
+            "Source/ScriptCanvas/MyNodeLibrary.h",
+            "Source/ScriptCanvas/MyScriptCanvasNode.cpp",
+            "Source/ScriptCanvas/MyScriptCanvasNode.h"
         ]
     }
 }
