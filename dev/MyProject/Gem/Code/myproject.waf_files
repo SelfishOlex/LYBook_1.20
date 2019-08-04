@@ -1,9 +1,14 @@
 {
     "auto": {
         "Include": [
+            "Include/MyProject/MyHelperBus.h",
             "Include/MyProject/MyProjectBus.h"
         ],
         "Source": [
+            "Source/MyScriptSystemComponent.cpp",
+            "Source/MyScriptSystemComponent.h",
+            "Source/MyScriptHelperComponent.cpp",
+            "Source/MyScriptHelperComponent.h",
             "Source/MyUIStatusComponents.cpp",
             "Source/MyUIStatusComponents.h",
             "Source/TransformSyncComponent.cpp",
