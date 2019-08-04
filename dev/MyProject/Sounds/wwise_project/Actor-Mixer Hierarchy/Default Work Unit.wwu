@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{99E38860-132C-47FD-A49A-2BB739855F6E}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{99E38860-132C-47FD-A49A-2BB739855F6E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="My_Music" ID="{9EC44885-E634-494E-A06B-1CD2195AC93E}" ShortID="919383872">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-17</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F888C816-BF51-4170-B9DF-CFF7DA530712}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F80730BE-BC20-4D69-9239-CBB3721A81DE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Music_amb_BeautifulPlanet" ID="{77AEE2B7-CFA8-45B8-AF6E-6DAA646A3426}" ShortID="101052259">
+							<Language>SFX</Language>
+							<AudioFile>Music_amb_BeautifulPlanet.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Music_amb_BeautifulPlanet" ID="{77AEE2B7-CFA8-45B8-AF6E-6DAA646A3426}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginInfo Project="wwise_project" Platform="Generic" BasePlatform="Windows">
+	<Plugins>
+		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
+	</Plugins>
+</PluginInfo>

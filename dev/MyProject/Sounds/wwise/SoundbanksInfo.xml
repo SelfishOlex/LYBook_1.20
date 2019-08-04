@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Generic" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>D:\Work\LYBook_1.20\dev\MyProject\Sounds\wwise_project\</ProjectRoot>
+		<SourceFilesRoot>D:\Work\LYBook_1.20\dev\MyProject\Sounds\wwise_project\.cache\Generic\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Work\LYBook_1.20\dev\MyProject\Sounds\wwise\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Work\LYBook_1.20\dev\MyProject\Sounds\wwise_project\GeneratedSoundBanks\Generic</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2643612632" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Content</ObjectPath>
+			<ShortName>Content</ShortName>
+			<Path>Content.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2666883372" Name="Play_My_Music" ObjectPath="\Events\Default Work Unit\Play_My_Music"/>
+				<Event Id="725169646" Name="Stop_My_Music" ObjectPath="\Events\Default Work Unit\Stop_My_Music"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="101052259" Language="SFX">
+					<ShortName>Music_amb_BeautifulPlanet.wav</ShortName>
+					<Path>SFX\Music_amb_BeautifulPlanet_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
