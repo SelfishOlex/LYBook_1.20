@@ -9,6 +9,9 @@
 #include <TimedProjectileComponent.h>
 #include <PebbleSpawnerComponent.h>
 #include <FootstepComponent.h>
+#include <LocalClientComponent.h>
+#include <ServerAuthPlayerComponent.h>
+#include <ServerPlayerSpawnerComponent.h>
 
 namespace MultiplayerCharacter
 {
@@ -31,6 +34,10 @@ namespace MultiplayerCharacter
                 TimedProjectileComponent::CreateDescriptor(),
                 PebbleSpawnerComponent::CreateDescriptor(),
                 FootstepComponent::CreateDescriptor(),
+
+                LocalClientComponent::CreateDescriptor(),
+                ServerAuthPlayerComponent::CreateDescriptor(),
+                ServerPlayerSpawnerComponent::CreateDescriptor(),
             });
         }
 

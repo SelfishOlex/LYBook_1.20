@@ -1,61 +1,60 @@
-
-#include <MultiplayerCharacterSystemComponent.h>
-
 #include <AzCore/Serialization/SerializeContext.h>
 #include <AzCore/Serialization/EditContext.h>
-#include <AzCore/Serialization/EditContextConstants.inl>
+#include "MultiplayerCharacterSystemComponent.h"
+#include <INetwork.h>
 
-namespace MultiplayerCharacter
+using namespace MultiplayerCharacter;
+
+void MultiplayerCharacterSystemComponent::Reflect(
+    AZ::ReflectContext* context)
 {
-    void MultiplayerCharacterSystemComponent::Reflect(AZ::ReflectContext* context)
-    {
-        if (AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context))
-        {
-            serialize->Class<MultiplayerCharacterSystemComponent, AZ::Component>()
-                ->Version(0);
+    auto* s = azrtti_cast<AZ::SerializeContext*>(context);
+    if (!s) return;
+    s->Class<MultiplayerCharacterSystemComponent,
+        AZ::Component>()->Version(1);
 
-            if (AZ::EditContext* ec = serialize->GetEditContext())
-            {
-                ec->Class<MultiplayerCharacterSystemComponent>("MultiplayerCharacter", "[Description of functionality provided by this System Component]")
-                    ->ClassElement(AZ::Edit::ClassElements::EditorData, "")
-                        ->Attribute(AZ::Edit::Attributes::AppearsInAddComponentMenu, AZ_CRC("System"))
-                        ->Attribute(AZ::Edit::Attributes::AutoExpand, true)
-                    ;
-            }
-        }
-    }
+    AZ::EditContext* ec = s->GetEditContext();
+    if (!ec) return;
+    using namespace AZ::Edit::ClassElements;
+    using namespace AZ::Edit::Attributes;
+    ec->Class<MultiplayerCharacterSystemComponent>(
+        "MultiplayerCharacter", "[description]")
+        ->ClassElement(EditorData, "")
+        ->Attribute(AppearsInAddComponentMenu, AZ_CRC("System"));
+}
 
-    void MultiplayerCharacterSystemComponent::GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided)
-    {
-        provided.push_back(AZ_CRC("MultiplayerCharacterService"));
-    }
+GridMate::MemberIDCompact
+    MultiplayerCharacterSystemComponent::GetLocal()
+{
+    return m_selfId;
+}
 
-    void MultiplayerCharacterSystemComponent::GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible)
-    {
-        incompatible.push_back(AZ_CRC("MultiplayerCharacterService"));
-    }
+void MultiplayerCharacterSystemComponent::Activate()
+{
+    MultiplayerCharacterRequestBus::Handler::BusConnect();
+    CrySystemEventBus::Handler::BusConnect();
+}
 
-    void MultiplayerCharacterSystemComponent::GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required)
+void MultiplayerCharacterSystemComponent::Deactivate()
+{
+    MultiplayerCharacterRequestBus::Handler::BusDisconnect();
+    if (GridMate::SessionEventBus::Handler::BusIsConnected())
     {
-        AZ_UNUSED(required);
+        GridMate::SessionEventBus::Handler::BusDisconnect();
     }
+}
 
-    void MultiplayerCharacterSystemComponent::GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& dependent)
-    {
-        AZ_UNUSED(dependent);
-    }
+void MultiplayerCharacterSystemComponent::OnCrySystemInitialized(
+    ISystem& system, const SSystemInitParams& param)
+{
+    GridMate::SessionEventBus::Handler::BusConnect(
+            system.GetINetwork()->GetGridMate());
 
-    void MultiplayerCharacterSystemComponent::Init()
-    {
-    }
+    CrySystemEventBus::Handler::BusDisconnect();
+}
 
-    void MultiplayerCharacterSystemComponent::Activate()
-    {
-        MultiplayerCharacterRequestBus::Handler::BusConnect();
-    }
-
-    void MultiplayerCharacterSystemComponent::Deactivate()
-    {
-        MultiplayerCharacterRequestBus::Handler::BusDisconnect();
-    }
+void MultiplayerCharacterSystemComponent::OnSessionJoined(
+    GridMate::GridSession* session)
+{
+    m_selfId = session->GetMyMember()->GetIdCompact();
 }

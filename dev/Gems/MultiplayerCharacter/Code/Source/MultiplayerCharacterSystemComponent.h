@@ -1,36 +1,40 @@
 #pragma once
-
 #include <AzCore/Component/Component.h>
-
 #include <MultiplayerCharacter/MultiplayerCharacterBus.h>
+#include <GridMate/Session/Session.h>
+#include <CrySystemBus.h>
 
 namespace MultiplayerCharacter
 {
     class MultiplayerCharacterSystemComponent
         : public AZ::Component
         , protected MultiplayerCharacterRequestBus::Handler
+        , public GridMate::SessionEventBus::Handler
+        , public CrySystemEventBus::Handler
     {
     public:
-        AZ_COMPONENT(MultiplayerCharacterSystemComponent, "{05DB1C58-A0EA-4067-8E0E-82A8DB0D98BB}");
+        AZ_COMPONENT(MultiplayerCharacterSystemComponent,
+            "{D1D1F21F-2302-4437-92EA-624BAF1A2ED4}");
 
         static void Reflect(AZ::ReflectContext* context);
 
-        static void GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided);
-        static void GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible);
-        static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required);
-        static void GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& dependent);
-
     protected:
-        ////////////////////////////////////////////////////////////////////////
-        // MultiplayerCharacterRequestBus interface implementation
+        // MultiplayerCharacterRequestBus
+        GridMate::MemberIDCompact GetLocal() override;
 
-        ////////////////////////////////////////////////////////////////////////
-
-        ////////////////////////////////////////////////////////////////////////
         // AZ::Component interface implementation
-        void Init() override;
         void Activate() override;
         void Deactivate() override;
-        ////////////////////////////////////////////////////////////////////////
+
+        // CrySystemEventBus
+        void OnCrySystemInitialized(ISystem& system,
+            const SSystemInitParams& param) override;
+
+        // GridMate::SessionEventBus implementation
+        void OnSessionJoined(
+            GridMate::GridSession* session) override;
+
+    private:
+        GridMate::MemberIDCompact m_selfId = 0;
     };
 }
