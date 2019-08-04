@@ -26,6 +26,8 @@
             "Source/MyProjectSystemComponent.h"
         ],
         "Source/ScriptCanvas": [
+            "Source/ScriptCanvas/MyIncrementNode.cpp",
+            "Source/ScriptCanvas/MyIncrementNode.h",
             "Source/ScriptCanvas/MyNodeLibrary.cpp",
             "Source/ScriptCanvas/MyNodeLibrary.h",
             "Source/ScriptCanvas/MyScriptCanvasNode.cpp",

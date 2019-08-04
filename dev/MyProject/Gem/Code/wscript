@@ -8,6 +8,7 @@ def build(bld):
     AZ_CODEGEN_ARGS = az_code_gen = [{
                 'files'   : [
                     'Source/ScriptCanvas/MyScriptCanvasNode.h',
+                    'Source/ScriptCanvas/MyIncrementNode.h',
                 ],
                 'scripts' : [
                     os.path.join(script_canvas_dir,
