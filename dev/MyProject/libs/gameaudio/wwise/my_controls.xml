@@ -1,0 +1,27 @@
+<ATLConfig atl_name="my_controls">
+ <AudioTriggers>
+  <ATLTrigger atl_name="Stop_My_Music">
+   <WwiseEvent wwise_name="Stop_My_Music"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_My_Music">
+   <WwiseEvent wwise_name="Play_My_Music"/>
+  </ATLTrigger>
+ </AudioTriggers>
+ <AudioPreloads>
+  <ATLPreloadRequest atl_name="preload" atl_type="AutoLoad">
+   <ATLPlatforms>
+    <Platform atl_name="windows" atl_config_group_name="default"/>
+    <Platform atl_name="mac" atl_config_group_name="default"/>
+    <Platform atl_name="linux" atl_config_group_name="default"/>
+    <Platform atl_name="android" atl_config_group_name="default"/>
+    <Platform atl_name="ios" atl_config_group_name="default"/>
+    <Platform atl_name="appletv" atl_config_group_name="default"/>
+    <Platform atl_name="xboxone" atl_config_group_name="default"/>
+    <Platform atl_name="ps4" atl_config_group_name="default"/>
+   </ATLPlatforms>
+   <ATLConfigGroup atl_name="default">
+    <WwiseFile wwise_name="content.bnk"/>
+   </ATLConfigGroup>
+  </ATLPreloadRequest>
+ </AudioPreloads>
+</ATLConfig>
