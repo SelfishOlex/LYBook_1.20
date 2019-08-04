@@ -1,5 +1,11 @@
 <ATLConfig atl_name="my_controls">
  <AudioTriggers>
+  <ATLTrigger atl_name="Stop_My_Footsteps">
+   <WwiseEvent wwise_name="Stop_My_Footsteps"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_My_Footsteps">
+   <WwiseEvent wwise_name="Play_My_Footsteps"/>
+  </ATLTrigger>
   <ATLTrigger atl_name="Stop_My_Music">
    <WwiseEvent wwise_name="Stop_My_Music"/>
   </ATLTrigger>

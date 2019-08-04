@@ -21,13 +21,39 @@
 			<ShortName>Content</ShortName>
 			<Path>Content.bnk</Path>
 			<IncludedEvents>
+				<Event Id="878621216" Name="Play_My_Footsteps" ObjectPath="\Events\Default Work Unit\Play_My_Footsteps"/>
 				<Event Id="2666883372" Name="Play_My_Music" ObjectPath="\Events\Default Work Unit\Play_My_Music"/>
+				<Event Id="2939371902" Name="Stop_My_Footsteps" ObjectPath="\Events\Default Work Unit\Stop_My_Footsteps"/>
 				<Event Id="725169646" Name="Stop_My_Music" ObjectPath="\Events\Default Work Unit\Stop_My_Music"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="85094148" Language="SFX">
+					<ShortName>footstep_run_rock_1.wav</ShortName>
+					<Path>SFX\footstep_run_rock_1_56D34C19.wem</Path>
+				</File>
+				<File Id="86948871" Language="SFX">
+					<ShortName>footstep_run_rock_2.wav</ShortName>
+					<Path>SFX\footstep_run_rock_2_56D34C19.wem</Path>
+				</File>
 				<File Id="101052259" Language="SFX">
 					<ShortName>Music_amb_BeautifulPlanet.wav</ShortName>
 					<Path>SFX\Music_amb_BeautifulPlanet_56D34C19.wem</Path>
+				</File>
+				<File Id="104846191" Language="SFX">
+					<ShortName>footstep_run_rock_7.wav</ShortName>
+					<Path>SFX\footstep_run_rock_7_56D34C19.wem</Path>
+				</File>
+				<File Id="164825384" Language="SFX">
+					<ShortName>footstep_run_rock_8.wav</ShortName>
+					<Path>SFX\footstep_run_rock_8_56D34C19.wem</Path>
+				</File>
+				<File Id="556394544" Language="SFX">
+					<ShortName>footstep_run_rock_3.wav</ShortName>
+					<Path>SFX\footstep_run_rock_3_56D34C19.wem</Path>
+				</File>
+				<File Id="586398941" Language="SFX">
+					<ShortName>footstep_run_rock_6.wav</ShortName>
+					<Path>SFX\footstep_run_rock_6_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

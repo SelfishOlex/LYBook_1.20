@@ -31,6 +31,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_My_Footsteps" ID="{28908AB6-FDB5-422E-8B15-9DD9F1610B00}">
+					<ChildrenList>
+						<Action Name="" ID="{DF1F659D-46F9-4A0D-AA0E-84579A8A3B4B}" ShortID="129223708">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="My_Footsteps" ID="{8A4A6240-0A54-41A1-B47A-909024C3350D}" WorkUnitID="{99E38860-132C-47FD-A49A-2BB739855F6E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_My_Footsteps" ID="{A9BE58AC-2FA2-4BC2-BF81-44BA788FC413}">
+					<ChildrenList>
+						<Action Name="" ID="{C053CC7D-7529-4962-A9F6-FD39EC81BECC}" ShortID="186476719">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="My_Footsteps" ID="{8A4A6240-0A54-41A1-B47A-909024C3350D}" WorkUnitID="{99E38860-132C-47FD-A49A-2BB739855F6E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

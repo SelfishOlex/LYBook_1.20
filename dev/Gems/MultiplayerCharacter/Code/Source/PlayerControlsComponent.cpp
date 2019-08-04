@@ -6,6 +6,7 @@
 #include <MultiplayerCharacter/PebbleSpawnerComponentBus.h>
 #include <AzFramework/Physics/PhysicsComponentBus.h>
 #include <Integration/AnimGraphComponentBus.h>
+#include <MultiplayerCharacter/FootstepComponentBus.h>
 
 using namespace AZ;
 using namespace MultiplayerCharacter;
@@ -143,6 +144,12 @@ void PlayerControlsComponent::OnTick(
     AnimBus::Event(GetEntityId(),
         &AnimBus::Events::SetNamedParameterFloat, "Speed",
         direction.GetLengthSq() > 0 ? 10.f : 0.f);
+
+    if (direction.GetLengthSq() > 0)
+    {
+        FootstepComponentBus::Event( GetEntityId(),
+            &FootstepComponentBus::Events::TickFootstep, dt);
+    }
 
     // add gravity
     direction += AZ::Vector3::CreateAxisZ( m_gravity );
