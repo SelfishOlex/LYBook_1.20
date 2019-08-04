@@ -45,6 +45,7 @@ namespace MultiplayerCharacter
         float m_gravity = -0.981f;
 
         float m_rotZ = 0.f;
+        float m_prevTurn = 0.f;
         void SetRotation();
     };
 }

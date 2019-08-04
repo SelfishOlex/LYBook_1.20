@@ -9,7 +9,8 @@ def build(bld):
         test_all_file_list      = ['multiplayercharacter_tests.waf_files'],
 
         # Add custom build options here
-        use                     = ['LmbrCentral'],
+        use                     = ['LmbrCentral',
+                                   'EMotionFXStaticLib'],
 
         # To add an editor module to your gem:
         #

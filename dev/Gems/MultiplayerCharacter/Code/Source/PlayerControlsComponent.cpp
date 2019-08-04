@@ -5,9 +5,11 @@
 #include <AzFramework/Physics/CharacterBus.h>
 #include <MultiplayerCharacter/PebbleSpawnerComponentBus.h>
 #include <AzFramework/Physics/PhysicsComponentBus.h>
+#include <Integration/AnimGraphComponentBus.h>
 
 using namespace AZ;
 using namespace MultiplayerCharacter;
+using namespace EMotionFX;
 
 void PlayerControlsComponent::Shoot(ActionState state)
 {
@@ -94,6 +96,13 @@ void PlayerControlsComponent::Turn(float amount)
 {
     m_rotZ = amount * m_turnSpeed;
     SetRotation();
+
+    using AnimBus = Integration::AnimGraphComponentRequestBus;
+    AnimBus::Event(GetEntityId(),
+        &AnimBus::Events::SetNamedParameterFloat, "TurnSpeed",
+        (m_prevTurn - amount) * 100);
+
+    m_prevTurn = amount;
 }
 
 void PlayerControlsComponent::SetRotation()
@@ -129,6 +138,11 @@ void PlayerControlsComponent::OnTick(
         &TransformBus::Events::GetWorldRotationQuaternion);
     // Apply the orientation
     direction = q * direction;
+
+    using AnimBus = Integration::AnimGraphComponentRequestBus;
+    AnimBus::Event(GetEntityId(),
+        &AnimBus::Events::SetNamedParameterFloat, "Speed",
+        direction.GetLengthSq() > 0 ? 10.f : 0.f);
 
     // add gravity
     direction += AZ::Vector3::CreateAxisZ( m_gravity );
