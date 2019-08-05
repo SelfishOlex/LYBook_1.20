@@ -74,18 +74,18 @@ namespace LmbrCentral
         RandomTimedSpawnerConfiguration::Reflect(context);
     }
 
-    void RandomTimedSpawnerComponent::GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided) 
+    void RandomTimedSpawnerComponent::GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided)
     {
         provided.push_back(AZ_CRC("RandomTimedSpawnerService", 0x56f2fa36));
     }
     void RandomTimedSpawnerComponent::GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible)
     {
-        //Only compatible with Box and Cylinder shapes 
+        //Only compatible with Box and Cylinder shapes
         incompatible.push_back(AZ_CRC("CapsuleShapeService", 0x9bc1122c));
         incompatible.push_back(AZ_CRC("SphereShapeService", 0x90c8dc80));
         incompatible.push_back(AZ_CRC("CompoundShapeService", 0x4f7c640a));
     }
-    void RandomTimedSpawnerComponent::GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required) 
+    void RandomTimedSpawnerComponent::GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required)
     {
         required.push_back(AZ_CRC("TransformService", 0x8ee22c50));
         required.push_back(AZ_CRC("ShapeService", 0xe86aa5fe));
@@ -94,6 +94,8 @@ namespace LmbrCentral
 
     void RandomTimedSpawnerComponent::Activate()
     {
+        RandomTimedSpawnerComponentRequestBus::Handler::BusConnect( GetEntityId() );
+
         AZStd::chrono::system_clock::time_point now = AZStd::chrono::system_clock::now();
         m_currentTime = AZ::ScriptTimePoint(now).GetSeconds();
 
@@ -107,6 +109,8 @@ namespace LmbrCentral
 
     void RandomTimedSpawnerComponent::Deactivate()
     {
+        RandomTimedSpawnerComponentRequestBus::Handler::BusDisconnect();
+
         if (m_config.m_enabled)
         {
             AZ::TickBus::Handler::BusDisconnect();
@@ -123,22 +127,22 @@ namespace LmbrCentral
             spawnTransform.SetTranslation(CalculateNextSpawnPosition());
 
             LmbrCentral::SpawnerComponentRequestBus::Event(GetEntityId(), &LmbrCentral::SpawnerComponentRequestBus::Events::SpawnAbsolute, spawnTransform);
-            
+
             CalculateNextSpawnTime();
         }
     }
 
-    void RandomTimedSpawnerComponent::Enable() 
+    void RandomTimedSpawnerComponent::Enable()
     {
         m_config.m_enabled = true;
         AZ::TickBus::Handler::BusConnect();
     }
-    void RandomTimedSpawnerComponent::Disable() 
+    void RandomTimedSpawnerComponent::Disable()
     {
         m_config.m_enabled = false;
         AZ::TickBus::Handler::BusDisconnect();
     }
-    void RandomTimedSpawnerComponent::Toggle() 
+    void RandomTimedSpawnerComponent::Toggle()
     {
         m_config.m_enabled = !m_config.m_enabled;
         if (m_config.m_enabled)
@@ -159,7 +163,7 @@ namespace LmbrCentral
 
         m_nextSpawnTime = m_currentTime + spawnDelay;
     }
-    
+
     AZ::Vector3 RandomTimedSpawnerComponent::CalculateNextSpawnPosition()
     {
         AZ::Vector3 spawnPos = AZ::Vector3::CreateZero();

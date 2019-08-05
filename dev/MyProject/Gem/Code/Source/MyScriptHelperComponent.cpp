@@ -17,6 +17,7 @@ void MyScriptHelperComponent::Reflect(AZ::ReflectContext* rc)
     auto* bc = azrtti_cast<BehaviorContext*>(rc);
     if(!bc) return;
     bc->Class<MyHelper>("MyHelper")->
+        Method("IsDedicatedServer", &MyHelper::IsDedicatedServer)->
         Method("IsServer", &MyHelper::IsEntityAuthoritative)->
         Method("IsClient",
             [](AZ::EntityId entity)
@@ -29,4 +30,13 @@ void MyScriptHelperComponent::Reflect(AZ::ReflectContext* rc)
 bool MyHelper::IsEntityAuthoritative(AZ::EntityId entity)
 {
     return AzFramework::NetQuery::IsEntityAuthoritative(entity);
+}
+
+bool MyHelper::IsDedicatedServer()
+{
+#if defined(DEDICATED_SERVER)
+    return true;
+#else
+    return false;
+#endif
 }

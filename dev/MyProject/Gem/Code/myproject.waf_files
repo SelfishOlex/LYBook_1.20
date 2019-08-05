@@ -32,6 +32,12 @@
             "Source/ScriptCanvas/MyNodeLibrary.h",
             "Source/ScriptCanvas/MyScriptCanvasNode.cpp",
             "Source/ScriptCanvas/MyScriptCanvasNode.h"
+        ],
+        "Source/LargeWorld": [
+            "Source/LargeWorld/PlayerAoIComponent.cpp",
+            "Source/LargeWorld/PlayerAoIComponent.h",
+            "Source/LargeWorld/PointOfInterestComponent.cpp",
+            "Source/LargeWorld/PointOfInterestComponent.h"
         ]
     }
 }
