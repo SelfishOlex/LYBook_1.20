@@ -1,293 +1,317 @@
-<ObjectStream version="2">
-	<Class name="SceneManifest" type="{9274AD17-3212-4651-9F3B-7DCCB080E467}" version="1" specializationTypeId="{9274AD17-3212-4651-9F3B-7DCCB080E467}">
-		<Class name="AZStd::vector" field="values" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}" specializationTypeId="{5D6A7C67-11CA-59A4-829B-0B20B781B292}">
-			<Class name="AZStd::shared_ptr" field="element" type="{D5B5ACA6-A81E-410E-8151-80C97B8CD2A0}" specializationTypeId="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}">
-				<Class name="SkeletonGroup" field="element" type="{F5F8D1BF-3A24-45E8-8C3F-6A682CA02520}" version="2" specializationTypeId="{F5F8D1BF-3A24-45E8-8C3F-6A682CA02520}">
-					<Class name="ISkeletonGroup" field="BaseClass1" type="{419ECE00-3CC5-4CAB-A451-453BF3FEA665}" version="1" specializationTypeId="{419ECE00-3CC5-4CAB-A451-453BF3FEA665}">
-						<Class name="IGroup" field="BaseClass1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}" version="1" specializationTypeId="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
-							<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}" specializationTypeId="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+<ObjectStream version="3">
+	<Class name="SceneManifest" version="1" type="{9274AD17-3212-4651-9F3B-7DCCB080E467}">
+		<Class name="AZStd::vector" field="values" type="{5D6A7C67-11CA-59A4-829B-0B20B781B292}">
+			<Class name="AZStd::shared_ptr" field="element" type="{EB7522F9-0E87-55A9-A191-E924DC5AE867}">
+				<Class name="SkeletonGroup" field="element" version="3" type="{F5F8D1BF-3A24-45E8-8C3F-6A682CA02520}">
+					<Class name="ISkeletonGroup" field="BaseClass1" version="1" type="{419ECE00-3CC5-4CAB-A451-453BF3FEA665}">
+						<Class name="IGroup" field="BaseClass1" version="1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
+							<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
 						</Class>
 					</Class>
-					<Class name="AZStd::string" field="name" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="Jack_Strafe_Run_Forwards_ZUp" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-					<Class name="AZStd::string" field="selectedRootBone" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-					<Class name="RuleContainer" field="rules" type="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}" version="1" specializationTypeId="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}">
-						<Class name="AZStd::vector" field="rules" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}" specializationTypeId="{B5BDB053-178F-5D55-8663-70897A71B7C9}"/>
+					<Class name="AZStd::string" field="name" value="Jack_Strafe_Run_Forwards_ZUp" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="selectedRootBone" value="RootNode.jack_root" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="RuleContainer" field="rules" version="1" type="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}">
+						<Class name="AZStd::vector" field="rules" type="{B5BDB053-178F-5D55-8663-70897A71B7C9}"/>
+					</Class>
+					<Class name="AZ::Uuid" field="id" value="{00000000-0000-0000-0000-000000000000}" type="{E152C105-A133-4D03-BBF8-3D4B2FBA3E2A}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::shared_ptr" field="element" type="{EB7522F9-0E87-55A9-A191-E924DC5AE867}">
+				<Class name="AnimationGroup" field="element" version="3" type="{982E0030-8131-43E9-BA8C-23775A3B7219}">
+					<Class name="IAnimationGroup" field="BaseClass1" version="1" type="{B07FB380-6A1F-40BE-B3CE-41258985DF36}">
+						<Class name="IGroup" field="BaseClass1" version="1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
+							<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+						</Class>
+					</Class>
+					<Class name="AZStd::string" field="name" value="Jack_Strafe_Run_Forwards_ZUp" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZ::Uuid" field="id" value="{00000000-0000-0000-0000-000000000000}" type="{E152C105-A133-4D03-BBF8-3D4B2FBA3E2A}"/>
+					<Class name="AZStd::string" field="selectedRootBone" value="RootNode.jack_root" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="unsigned int" field="startFrame" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+					<Class name="unsigned int" field="endFrame" value="20" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+					<Class name="float" field="defaultCompressionStrength" value="0.1000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+					<Class name="AZStd::vector" field="perBoneCompression" type="{0FA5009E-B9FE-5DB8-8FA4-8D3E0C16742D}"/>
+					<Class name="RuleContainer" field="rules" version="1" type="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}">
+						<Class name="AZStd::vector" field="rules" type="{B5BDB053-178F-5D55-8663-70897A71B7C9}"/>
 					</Class>
 				</Class>
 			</Class>
-			<Class name="AZStd::shared_ptr" field="element" type="{D5B5ACA6-A81E-410E-8151-80C97B8CD2A0}" specializationTypeId="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}">
-				<Class name="AnimationGroup" field="element" type="{982E0030-8131-43E9-BA8C-23775A3B7219}" version="2" specializationTypeId="{982E0030-8131-43E9-BA8C-23775A3B7219}">
-					<Class name="IAnimationGroup" field="BaseClass1" type="{B07FB380-6A1F-40BE-B3CE-41258985DF36}" version="1" specializationTypeId="{B07FB380-6A1F-40BE-B3CE-41258985DF36}">
-						<Class name="IGroup" field="BaseClass1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}" version="1" specializationTypeId="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
-							<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}" specializationTypeId="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+			<Class name="AZStd::shared_ptr" field="element" type="{EB7522F9-0E87-55A9-A191-E924DC5AE867}">
+				<Class name="MotionGroup" field="element" version="3" type="{1B0ABB1E-F6DF-4534-9A35-2DD8244BF58C}">
+					<Class name="IMotionGroup" field="BaseClass1" version="1" type="{1CA400A8-2C3E-423D-B8A3-C457EF88E533}">
+						<Class name="IGroup" field="BaseClass1" version="1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
+							<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
 						</Class>
 					</Class>
-					<Class name="AZStd::string" field="name" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="Jack_Strafe_Run_Forwards_ZUp" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-					<Class name="AZStd::string" field="selectedRootBone" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-					<Class name="unsigned int" field="startFrame" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}" value="0" specializationTypeId="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
-					<Class name="unsigned int" field="endFrame" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}" value="20" specializationTypeId="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
-					<Class name="float" field="defaultCompressionStrength" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}" value="0.1000000" specializationTypeId="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
-					<Class name="AZStd::vector" field="perBoneCompression" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}" specializationTypeId="{0FA5009E-B9FE-5DB8-8FA4-8D3E0C16742D}"/>
-					<Class name="RuleContainer" field="rules" type="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}" version="1" specializationTypeId="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}">
-						<Class name="AZStd::vector" field="rules" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}" specializationTypeId="{B5BDB053-178F-5D55-8663-70897A71B7C9}"/>
-					</Class>
-				</Class>
-			</Class>
-			<Class name="AZStd::shared_ptr" field="element" type="{D5B5ACA6-A81E-410E-8151-80C97B8CD2A0}" specializationTypeId="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}">
-				<Class name="EFXMotionGroup" field="element" type="{1B0ABB1E-F6DF-4534-9A35-2DD8244BF58C}" version="1" specializationTypeId="{1B0ABB1E-F6DF-4534-9A35-2DD8244BF58C}">
-					<Class name="IEFXMotionGroup" field="BaseClass1" type="{1CA400A8-2C3E-423D-B8A3-C457EF88E533}" version="1" specializationTypeId="{1CA400A8-2C3E-423D-B8A3-C457EF88E533}">
-						<Class name="IGroup" field="BaseClass1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}" version="1" specializationTypeId="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
-							<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}" specializationTypeId="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
-						</Class>
-					</Class>
-					<Class name="AZStd::string" field="name" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="Jack_Strafe_Run_Forwards_ZUp" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-					<Class name="AZStd::string" field="selectedRootBone" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-					<Class name="unsigned int" field="startFrame" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}" value="0" specializationTypeId="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
-					<Class name="unsigned int" field="endFrame" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}" value="20" specializationTypeId="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
-					<Class name="RuleContainer" field="rules" type="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}" version="1" specializationTypeId="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}">
-						<Class name="AZStd::vector" field="rules" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}" specializationTypeId="{B5BDB053-178F-5D55-8663-70897A71B7C9}">
-							<Class name="AZStd::shared_ptr" field="element" type="{D5B5ACA6-A81E-410E-8151-80C97B8CD2A0}" specializationTypeId="{81267F8B-3963-423B-9FF7-D276D82CD110}">
-								<Class name="MetaDataRule" field="element" type="{8D759063-7D2E-4543-8EB3-AB510A5886CF}" version="1" specializationTypeId="{8D759063-7D2E-4543-8EB3-AB510A5886CF}">
-									<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}" specializationTypeId="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
-									<Class name="AZStd::string" field="metaData" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value='AdjustMotion -motionID $(MOTIONID) -motionExtractionMask 2 -motionExtractionNodeName "jack_root" -trajectoryNodeName "EMFX_Trajectory"
+					<Class name="AZStd::string" field="name" value="Jack_Strafe_Run_Forwards_ZUp" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="selectedRootBone" value="RootNode.jack_root" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZ::Uuid" field="id" value="{3D22F94D-22F3-59F0-AF0B-219B0E37E0BA}" type="{E152C105-A133-4D03-BBF8-3D4B2FBA3E2A}"/>
+					<Class name="RuleContainer" field="rules" version="1" type="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}">
+						<Class name="AZStd::vector" field="rules" type="{B5BDB053-178F-5D55-8663-70897A71B7C9}">
+							<Class name="AZStd::shared_ptr" field="element" type="{0BB4AFBA-F087-55C7-95DF-01D71F6CB052}">
+								<Class name="MetaDataRule" field="element" version="2" type="{8D759063-7D2E-4543-8EB3-AB510A5886CF}">
+									<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+									<Class name="AZStd::vector" field="commands" type="{C9984A24-DA9E-518F-9F81-27E51FAEB1F7}">
+										<Class name="CommandSystem::CommandAdjustMotion" field="element" version="1" type="{A8977553-4011-4BEB-97C8-6AE44B07C7A8}">
+											<Class name="MCore::Command" field="BaseClass1" version="1" type="{49C636CE-7C0E-408A-A0F7-F7D12647EFBA}"/>
+											<Class name="CommandSystem::MotionIdCommandMixin" field="BaseClass2" version="1" type="{968E9513-3159-4469-B5FA-97D0920456E3}">
+												<Class name="int" field="motionID" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+											</Class>
+											<Class name="AZStd::optional" field="dirtyFlag" type="{0170062C-2E7E-5CEB-BAB8-F7663BEF7B3E}"/>
+											<Class name="AZStd::optional" field="motionExtractionFlags" type="{43BA4537-CBCC-54F5-B403-84188A203D60}">
+												<Class name="unsigned char" field="element" value="0" type="{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}"/>
+											</Class>
+											<Class name="AZStd::optional" field="name" type="{B0D91084-263A-54B9-A4F3-7C5F4240E248}"/>
+										</Class>
+										<Class name="CommandSystem::CommandCreateMotionEventTrack" field="element" version="1" type="{961F762D-5B90-4E21-8692-9FADDCA54E6C}">
+											<Class name="MCore::Command" field="BaseClass1" version="1" type="{49C636CE-7C0E-408A-A0F7-F7D12647EFBA}"/>
+											<Class name="CommandSystem::MotionIdCommandMixin" field="BaseClass2" version="1" type="{968E9513-3159-4469-B5FA-97D0920456E3}">
+												<Class name="int" field="motionID" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+											</Class>
+											<Class name="AZStd::string" field="eventTrackName" value="Sync" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+											<Class name="AZStd::optional" field="eventTrackIndex" type="{5BC30B08-5E9C-5B73-BDE4-4BE8170C21C6}"/>
+											<Class name="AZStd::optional" field="isEnabled" type="{0170062C-2E7E-5CEB-BAB8-F7663BEF7B3E}"/>
+										</Class>
+									</Class>
+									<Class name="AZStd::string" field="metaData" value='AdjustMotion -motionID $(MOTIONID) -motionExtractionMask 2 -motionExtractionNodeName "jack_root" -trajectoryNodeName "EMFX_Trajectory"
 ClearMotionEvents -motionID $(MOTIONID)
 CreateMotionEventTrack -motionID $(MOTIONID) -eventTrackName "Sync"
 AdjustMotionEventTrack -motionID $(MOTIONID) -eventTrackName "Sync" -enabled true
-' specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+' type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
 								</Class>
 							</Class>
 						</Class>
 					</Class>
 				</Class>
 			</Class>
-			<Class name="AZStd::shared_ptr" field="element" type="{D5B5ACA6-A81E-410E-8151-80C97B8CD2A0}" specializationTypeId="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}">
-				<Class name="ActorGroup" field="element" type="{D1AC3803-8282-46C5-8610-93CD39B0F843}" version="1" specializationTypeId="{D1AC3803-8282-46C5-8610-93CD39B0F843}">
-					<Class name="IActorGroup" field="BaseClass1" type="{C86945A8-AEE8-4CFC-8FBF-A20E9BC71348}" version="1" specializationTypeId="{C86945A8-AEE8-4CFC-8FBF-A20E9BC71348}">
-						<Class name="IGroup" field="BaseClass1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}" version="1" specializationTypeId="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
-							<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}" specializationTypeId="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+			<Class name="AZStd::shared_ptr" field="element" type="{EB7522F9-0E87-55A9-A191-E924DC5AE867}">
+				<Class name="ActorGroup" field="element" version="4" type="{D1AC3803-8282-46C5-8610-93CD39B0F843}">
+					<Class name="IActorGroup" field="BaseClass1" version="2" type="{C86945A8-AEE8-4CFC-8FBF-A20E9BC71348}">
+						<Class name="ISceneNodeGroup" field="BaseClass1" version="1" type="{1D20FA11-B184-429E-8C86-745852234845}">
+							<Class name="IGroup" field="BaseClass1" version="1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
+								<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+							</Class>
 						</Class>
 					</Class>
-					<Class name="AZStd::string" field="name" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="Jack_Strafe_Run_Forwards_ZUp" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-					<Class name="AZStd::string" field="selectedRootBone" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-					<Class name="SceneNodeSelectionList" field="nodeSelectionList" type="{D0CE66CE-1BAD-42F5-86ED-3923573B3A02}" version="1" specializationTypeId="{D0CE66CE-1BAD-42F5-86ED-3923573B3A02}">
-						<Class name="ISceneNodeSelectionList" field="BaseClass1" type="{DC3F9996-E550-4780-A03B-80B0DDA1DA45}" version="1" specializationTypeId="{DC3F9996-E550-4780-A03B-80B0DDA1DA45}"/>
-						<Class name="AZStd::vector" field="selectedNodes" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}" specializationTypeId="{99DAD0BC-740E-5E82-826B-8FC7968CC02C}"/>
-						<Class name="AZStd::vector" field="unselectedNodes" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}" specializationTypeId="{99DAD0BC-740E-5E82-826B-8FC7968CC02C}">
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_upLegRoll" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_upLegRoll" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_upLegRoll.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_upLegRoll.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_upLegRoll.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_upLegRoll.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle.l_ball" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle.r_ball" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle.l_ball.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle.l_ball.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle.r_ball.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle.r_ball.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck.head" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck.head.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck.head.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_upArmRoll" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_upArmRoll" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_upArmRoll.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_upArmRoll.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_loArmRoll" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_upArmRoll.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_upArmRoll.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_loArmRoll" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_loArmRoll.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_loArmRoll.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_handProp" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_loArmRoll.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_loArmRoll.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_handProp" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_handProp.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_handProp.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_handProp.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_handProp.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2.l_thumb3" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2.l_index3" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2.l_mid3" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2.r_thumb3" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2.r_index3" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2.r_mid3" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2.l_thumb3.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2.l_thumb3.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2.l_index3.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2.l_index3.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2.l_mid3.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2.l_mid3.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2.l_ring3" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2.l_pinky3" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2.r_thumb3.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2.r_thumb3.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2.r_index3.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2.r_index3.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2.r_mid3.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2.r_mid3.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2.r_ring3" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2.r_pinky3" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2.l_ring3.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2.l_ring3.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2.l_pinky3.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2.l_pinky3.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2.r_ring3.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2.r_ring3.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2.r_pinky3.transform" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
-							<Class name="AZStd::string" field="element" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2.r_pinky3.animation" specializationTypeId="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="name" value="Jack_Strafe_Run_Forwards_ZUp" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="selectedRootBone" value="" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="SceneNodeSelectionList" field="nodeSelectionList" version="1" type="{D0CE66CE-1BAD-42F5-86ED-3923573B3A02}">
+						<Class name="ISceneNodeSelectionList" field="BaseClass1" version="1" type="{DC3F9996-E550-4780-A03B-80B0DDA1DA45}"/>
+						<Class name="AZStd::vector" field="selectedNodes" type="{99DAD0BC-740E-5E82-826B-8FC7968CC02C}"/>
+						<Class name="AZStd::vector" field="unselectedNodes" type="{99DAD0BC-740E-5E82-826B-8FC7968CC02C}">
+							<Class name="AZStd::string" field="element" value="RootNode" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_upLegRoll" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_upLegRoll" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_upLegRoll.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_upLegRoll.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_upLegRoll.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_upLegRoll.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle.l_ball" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle.r_ball" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle.l_ball.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.l_upLeg.l_loLeg.l_ankle.l_ball.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle.r_ball.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.r_upLeg.r_loLeg.r_ankle.r_ball.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck.head" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck.head.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.neck.head.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_upArmRoll" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_upArmRoll" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_upArmRoll.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_upArmRoll.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_loArmRoll" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_upArmRoll.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_upArmRoll.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_loArmRoll" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_loArmRoll.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_loArmRoll.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_handProp" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_loArmRoll.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_loArmRoll.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_handProp" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_handProp.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_handProp.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_handProp.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_handProp.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2.l_thumb3" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2.l_index3" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2.l_mid3" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2.r_thumb3" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2.r_index3" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2.r_mid3" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2.l_thumb3.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_thumb1.l_thumb2.l_thumb3.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2.l_index3.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_index1.l_index2.l_index3.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2.l_mid3.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_mid1.l_mid2.l_mid3.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2.l_ring3" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2.l_pinky3" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2.r_thumb3.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_thumb1.r_thumb2.r_thumb3.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2.r_index3.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_index1.r_index2.r_index3.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2.r_mid3.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_mid1.r_mid2.r_mid3.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2.r_ring3" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2.r_pinky3" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2.l_ring3.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_ring1.l_ring2.l_ring3.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2.l_pinky3.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.l_shldr.l_upArm.l_loArm.l_hand.l_metacarpal.l_pinky1.l_pinky2.l_pinky3.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2.r_ring3.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_ring1.r_ring2.r_ring3.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2.r_pinky3.animation" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.jack_root.Bip01__pelvis.spine1.spine2.spine3.r_shldr.r_upArm.r_loArm.r_hand.r_metacarpal.r_pinky1.r_pinky2.r_pinky3.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
 						</Class>
 					</Class>
-					<Class name="bool" field="loadMorphTargets" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}" value="false" specializationTypeId="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
-					<Class name="bool" field="autoCreateTrajectoryNode" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}" value="true" specializationTypeId="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
-					<Class name="RuleContainer" field="rules" type="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}" version="1" specializationTypeId="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}">
-						<Class name="AZStd::vector" field="rules" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}" specializationTypeId="{B5BDB053-178F-5D55-8663-70897A71B7C9}">
-							<Class name="AZStd::shared_ptr" field="element" type="{D5B5ACA6-A81E-410E-8151-80C97B8CD2A0}" specializationTypeId="{81267F8B-3963-423B-9FF7-D276D82CD110}">
-								<Class name="EFXSkinRule" field="element" type="{B26E7FC9-86A1-4711-8415-8BE4861C08BA}" version="2" specializationTypeId="{B26E7FC9-86A1-4711-8415-8BE4861C08BA}">
-									<Class name="IEFXSkinRule" field="BaseClass1" type="{5496ECAF-B096-4455-AE72-D55C5B675443}" version="1" specializationTypeId="{5496ECAF-B096-4455-AE72-D55C5B675443}">
-										<Class name="IRule" field="BaseClass1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}" version="1" specializationTypeId="{81267F8B-3963-423B-9FF7-D276D82CD110}">
-											<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}" specializationTypeId="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+					<Class name="AZ::Uuid" field="id" value="{487A0FDF-F07E-58F3-9D69-583D6B8EF8CE}" type="{E152C105-A133-4D03-BBF8-3D4B2FBA3E2A}"/>
+					<Class name="RuleContainer" field="rules" version="1" type="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}">
+						<Class name="AZStd::vector" field="rules" type="{B5BDB053-178F-5D55-8663-70897A71B7C9}">
+							<Class name="AZStd::shared_ptr" field="element" type="{0BB4AFBA-F087-55C7-95DF-01D71F6CB052}">
+								<Class name="SkinRule" field="element" version="2" type="{B26E7FC9-86A1-4711-8415-8BE4861C08BA}">
+									<Class name="ISkinRule" field="BaseClass1" version="1" type="{5496ECAF-B096-4455-AE72-D55C5B675443}">
+										<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+											<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
 										</Class>
 									</Class>
-									<Class name="unsigned int" field="maxWeightsPerVertex" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}" value="4" specializationTypeId="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
-									<Class name="float" field="weightThreshold" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}" value="0.0010000" specializationTypeId="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+									<Class name="unsigned int" field="maxWeightsPerVertex" value="4" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+									<Class name="float" field="weightThreshold" value="0.0010000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
 								</Class>
 							</Class>
-							<Class name="AZStd::shared_ptr" field="element" type="{D5B5ACA6-A81E-410E-8151-80C97B8CD2A0}" specializationTypeId="{81267F8B-3963-423B-9FF7-D276D82CD110}">
-								<Class name="EFXMeshRule" field="element" type="{7F115A73-28A2-4E35-8C87-1A1982773034}" version="2" specializationTypeId="{7F115A73-28A2-4E35-8C87-1A1982773034}">
-									<Class name="IEFXMeshRule" field="BaseClass1" type="{299934A2-22EC-48AF-AB2B-953AFF8E0B19}" version="1" specializationTypeId="{299934A2-22EC-48AF-AB2B-953AFF8E0B19}">
-										<Class name="IRule" field="BaseClass1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}" version="1" specializationTypeId="{81267F8B-3963-423B-9FF7-D276D82CD110}">
-											<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}" specializationTypeId="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+							<Class name="AZStd::shared_ptr" field="element" type="{0BB4AFBA-F087-55C7-95DF-01D71F6CB052}">
+								<Class name="MeshRule" field="element" version="2" type="{7F115A73-28A2-4E35-8C87-1A1982773034}">
+									<Class name="IMeshRule" field="BaseClass1" version="1" type="{299934A2-22EC-48AF-AB2B-953AFF8E0B19}">
+										<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+											<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
 										</Class>
 									</Class>
-									<Class name="bool" field="optimizeTriangleList" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}" value="true" specializationTypeId="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+									<Class name="bool" field="optimizeTriangleList" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
 								</Class>
 							</Class>
 						</Class>

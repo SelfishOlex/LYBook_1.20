@@ -31,18 +31,14 @@ void PlayerControlsComponent::Shoot(ActionState state)
 
 void PlayerControlsComponent::Activate()
 {
-#if defined(DEDICATED_SERVER)
     ServerPlayerControlsRequestBus::Handler::BusConnect(GetEntityId());
     AZ::TickBus::Handler::BusConnect();
-#endif
 }
 
 void PlayerControlsComponent::Deactivate()
 {
-#if defined(DEDICATED_SERVER)
     ServerPlayerControlsRequestBus::Handler::BusDisconnect();
     AZ::TickBus::Handler::BusDisconnect();
-#endif
 }
 
 void PlayerControlsComponent::Reflect(AZ::ReflectContext* ref)
@@ -155,6 +151,7 @@ void PlayerControlsComponent::OnTick(
             &FootstepComponentBus::Events::TickFootstep, dt);
     }
 
+#if defined(DEDICATED_SERVER)
     // add gravity
     direction += AZ::Vector3::CreateAxisZ( m_gravity );
 
@@ -162,4 +159,5 @@ void PlayerControlsComponent::OnTick(
     using CharacterBus = Physics::CharacterRequestBus;
     CharacterBus::Event(GetEntityId(),
         &CharacterBus::Events::TryRelativeMove, direction, dt);
+#endif
 }
