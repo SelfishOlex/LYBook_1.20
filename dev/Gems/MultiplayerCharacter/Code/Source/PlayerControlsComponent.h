@@ -8,7 +8,7 @@ namespace MultiplayerCharacter
     // Implements various player controls
     class PlayerControlsComponent
         : public AZ::Component
-        , public PlayerControlsRequestBus::Handler
+        , public ServerPlayerControlsRequestBus::Handler
         , public AZ::TickBus::Handler
     {
     public:
@@ -23,7 +23,7 @@ namespace MultiplayerCharacter
         static void Reflect(AZ::ReflectContext* ref);
 
     protected:
-        // PlayerControlsRequestBus interface
+        // ServerPlayerControlsRequestBus interface
         void MoveForward(ActionState state) override;
         void MoveBackward(ActionState state) override;
         void StrafeLeft(ActionState state) override;

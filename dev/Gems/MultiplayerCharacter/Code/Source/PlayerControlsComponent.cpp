@@ -31,14 +31,18 @@ void PlayerControlsComponent::Shoot(ActionState state)
 
 void PlayerControlsComponent::Activate()
 {
-    PlayerControlsRequestBus::Handler::BusConnect(GetEntityId());
+#if defined(DEDICATED_SERVER)
+    ServerPlayerControlsRequestBus::Handler::BusConnect(GetEntityId());
     AZ::TickBus::Handler::BusConnect();
+#endif
 }
 
 void PlayerControlsComponent::Deactivate()
 {
-    PlayerControlsRequestBus::Handler::BusDisconnect();
+#if defined(DEDICATED_SERVER)
+    ServerPlayerControlsRequestBus::Handler::BusDisconnect();
     AZ::TickBus::Handler::BusDisconnect();
+#endif
 }
 
 void PlayerControlsComponent::Reflect(AZ::ReflectContext* ref)

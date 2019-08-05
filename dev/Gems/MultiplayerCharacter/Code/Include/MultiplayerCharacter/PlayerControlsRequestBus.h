@@ -35,4 +35,21 @@ namespace MultiplayerCharacter
 
     using PlayerControlsRequestBus =
         AZ::EBus<PlayerControlsRequests>;
+
+    class ServerPlayerControlsRequests
+        : public PlayerControlsRequests
+    {
+    public:
+        virtual ~ServerPlayerControlsRequests() = default;
+
+        // EBusTraits overrides
+        static const AZ::EBusHandlerPolicy HandlerPolicy =
+            AZ::EBusHandlerPolicy::Multiple;
+        static const AZ::EBusAddressPolicy AddressPolicy =
+            AZ::EBusAddressPolicy::ById;
+        using BusIdType = AZ::EntityId;
+    };
+
+    using ServerPlayerControlsRequestBus =
+        AZ::EBus<ServerPlayerControlsRequests>;
 } // namespace MultiplayerCharacter

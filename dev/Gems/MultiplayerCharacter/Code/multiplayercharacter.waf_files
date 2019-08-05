@@ -1,6 +1,7 @@
 {
     "auto": {
         "Include": [
+            "Include/MultiplayerCharacter/LocalPlayerBodyNotificationBus.h",
             "Include/MultiplayerCharacter/LocalClientBus.h",
             "Include/MultiplayerCharacter/ServerPlayerBodyBus.h",
             "Include/MultiplayerCharacter/FootstepComponentBus.h",
@@ -9,6 +10,8 @@
             "Include/MultiplayerCharacter/PlayerControlsRequestBus.h"
         ],
         "Source": [
+            "Source/PlayerActionRelayComponent.cpp",
+            "Source/PlayerActionRelayComponent.h",
             "Source/LocalClientComponent.cpp",
             "Source/LocalClientComponent.h",
             "Source/ServerAuthPlayerComponent.cpp",
