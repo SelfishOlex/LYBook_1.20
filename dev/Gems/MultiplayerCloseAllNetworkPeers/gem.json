@@ -1,0 +1,15 @@
+{
+    "GemFormatVersion": 4,
+    "Uuid": "68ef06879ec4459891ac9ad946d476e9",
+    "Name": "MultiplayerCloseAllNetworkPeers",
+    "DisplayName": "MultiplayerCloseAllNetworkPeers",
+    "Version": "0.1.0",
+    "Summary": "Provides console command closeallnetworkpeers.",
+    "Tags": [ "Untagged" ],
+    "IconPath": "preview.png",
+    "Modules": [
+        {
+            "Type": "GameModule"
+        }
+    ]
+}

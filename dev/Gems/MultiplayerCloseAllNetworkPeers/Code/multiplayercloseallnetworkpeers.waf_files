@@ -1,0 +1,24 @@
+{
+    "none": {
+        "Source": [
+            "Source/MultiplayerCloseAllNetworkPeers_precompiled.cpp",
+            "Source/MultiplayerCloseAllNetworkPeers_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+            "Include/MultiplayerCloseAllNetworkPeers/CloseNetworkPeersBus.h",
+            "Include/MultiplayerCloseAllNetworkPeers/ShutdownApplication.h"
+        ],
+        "Source": [
+            "Source/MultiplayerCloseAllNetworkPeersModule.cpp",
+            "Source/GemSystemComponent.cpp",
+            "Source/GemSystemComponent.h",
+            "Source/ConsoleCommands.cpp",
+            "Source/ConsoleCommands.h",
+            "Source/WorkerComponent.cpp",
+            "Source/WorkerComponent.h",
+            "Source/ShutdownApplication.cpp"
+        ]
+    }
+}
