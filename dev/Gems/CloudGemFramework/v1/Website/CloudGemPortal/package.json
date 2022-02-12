@@ -47,7 +47,7 @@
     "ng2-toastr": "^4.1.2",
     "ngx-datatable": "^1.0.3",
     "nouislider": "^10.1.0",
-    "ajv": "~6.4.0",
+    "ajv": "~6.12.3",
     "reflect-metadata": "^0.1.10",
     "rxjs": "^5.4.2",
     "ts-clipboard": "1.0.13",
